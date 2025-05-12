@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Page with Animations & LocalStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Customize Your Theme</h1>
+    
+    <label for="colorPicker">Pick Your Theme Color:</label>
+    <input type="color" id="colorPicker">
+
+    <div class="button-container">
+      <button class="animated-button" onclick="savePreference()">Save Preference</button>
+      <button onclick="loadPreference()">Load Preference</button>
+    </div>
+
+    <div id="animatedBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
